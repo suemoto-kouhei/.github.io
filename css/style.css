@@ -270,7 +270,7 @@ h2 span {
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-text span {
-    left: 130px;
+    left: 140px;
     font-size: 4rem;
   }
 }
@@ -286,7 +286,7 @@ h2 span {
   #page-header .header-title::before {
     content: url(../images/logo2.jpg);
     top: 0px;
-    left: 30px;
+    left: 60px;
   }
 }
 
@@ -750,7 +750,7 @@ h2 span {
 
 /*　背景画像設定　*/
 .slider-item01 {
-  background: url(https://github.com/suemoto-kouhei/portfolio/blob/main/images/heya.jpg?raw=true) !important;
+  background: url(../images/kesiki.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
