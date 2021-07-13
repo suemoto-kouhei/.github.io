@@ -284,7 +284,7 @@ h2 span {
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-title::before {
-    content: url(logo2.jpg);
+    content: url(../logo2.jpg);
     top: 0px;
     left: 30px;
   }
@@ -414,7 +414,7 @@ h2 span {
 }
 
 #page-header .header-content .header-nav {
-  background: url(kesiki.jpg);
+  background: url(../kesiki.jpg);
   background-position: bottom !important;
   background-size: cover !important;
   position: relative;
