@@ -762,7 +762,7 @@ h2 span {
 }
 
 .slider-item03 {
-  background: url(.../images/heya.jpg) !important;
+  background: url(..../images/heya.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
