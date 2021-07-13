@@ -277,14 +277,14 @@ h2 span {
 
 #page-header .header-title::before {
   position: absolute;
-  content: url(/images/logo6.jpg);
+  content: url(logo6.jpg);
   left: -50px;
   top: 5px;
 }
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-title::before {
-    content: url(/images/logo2.jpg);
+    content: url(logo2.jpg);
     top: 0px;
     left: 30px;
   }
@@ -414,7 +414,7 @@ h2 span {
 }
 
 #page-header .header-content .header-nav {
-  background: url(/images/kesiki.jpg);
+  background: url(kesiki.jpg);
   background-position: bottom !important;
   background-size: cover !important;
   position: relative;
@@ -750,19 +750,19 @@ h2 span {
 
 /*　背景画像設定　*/
 .slider-item01 {
-  background: url(/images/kesiki.jpg) !important;
+  background: url(kesiki.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
 
 .slider-item02 {
-  background: url(/images/robie2.jpg) !important;
+  background: url(robie2.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
 
 .slider-item03 {
-  background: url(/images/heya.jpg) !important;
+  background: url(heya.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
