@@ -712,12 +712,10 @@ h2 span {
 }
 
 .slide-title {
-  display: none;
 }
 
 @media print, screen and (min-width: 768px) {
   .slide-title {
-    display: block;
     position: absolute;
     height: 450px;
     width: 250px;
