@@ -284,7 +284,7 @@ h2 span {
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-title::before {
-    content: url(../logo2.jpg);
+    content: url(../images/logo2.jpg);
     top: 0px;
     left: 30px;
   }
@@ -414,7 +414,7 @@ h2 span {
 }
 
 #page-header .header-content .header-nav {
-  background: url(../kesiki.jpg);
+  background: url(../images/kesiki.jpg);
   background-position: bottom !important;
   background-size: cover !important;
   position: relative;
@@ -750,7 +750,7 @@ h2 span {
 
 /*　背景画像設定　*/
 .slider-item01 {
-   background: url(../images/robie2.jpg) !important;
+   background: url(../images/kesiki.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
@@ -762,7 +762,7 @@ h2 span {
 }
 
 .slider-item03 {
-  background: url(../images/robie2.jpg) !important;
+  background: url(../images/heya.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
