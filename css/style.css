@@ -207,6 +207,7 @@ h2 span {
 
 #page-header {
   width: 100%;
+  letter-spacing: .2em;
   background: #fff;
   position: fixed;
   z-index: 1000000;
@@ -246,51 +247,41 @@ h2 span {
   }
 }
 
-#page-header .header-text p {
-  position: absolute;
-  font-size: 1.5rem;
-  top: -7px;
-  left: 64%;
-  font-weight: bold;
-}
-
-@media print, screen and (min-width: 768px) {
-  #page-header .header-text p {
-    display: none;
-  }
-}
-
 #page-header .header-text span {
   position: absolute;
   display: block;
   font-weight: bold;
-  left: 20px;
-  font-size: 2.5rem;
+  left: 0;
+  font-size: 3rem;
 }
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-text span {
-    left: 140px;
+    left: 130px;
     font-size: 4rem;
   }
 }
 
 #page-header .header-title::before {
   position: absolute;
-  content: url(logo6.jpg);
+  content: url(/images/logo6.jpg);
   left: -50px;
   top: 5px;
 }
 
 @media print, screen and (min-width: 768px) {
   #page-header .header-title::before {
-    content: url(../images/logo2.jpg);
+    content: url(/images/logo2.jpg);
     top: 0px;
-    left: 60px;
+    left: 50px;
   }
 }
 
-#page-header .nav-btn {
+#page-header .hamburger {
+  position: relative;
+}
+
+#page-header .hamburger .nav-btn {
   width: 52px;
   height: 30px;
   -webkit-appearance: none;
@@ -301,17 +292,17 @@ h2 span {
   font: inherit;
   outline: none;
   position: relative;
-  left: 60%;
+  left: 69%;
   top: -70px;
 }
 
 @media print, screen and (min-width: 768px) {
-  #page-header .nav-btn {
+  #page-header .hamburger .nav-btn {
     display: none;
   }
 }
 
-#page-header .nav-btn.-active span {
+#page-header .hamburger .nav-btn.-active span {
   top: 0;
   bottom: 0;
   margin: auto;
@@ -321,22 +312,22 @@ h2 span {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-#page-header .nav-btn.-active span:first-child {
+#page-header .hamburger .nav-btn.-active span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#page-header .nav-btn.-active span:nth-child(2) {
+#page-header .hamburger .nav-btn.-active span:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-#page-header .nav-btn.-active span:last-child {
+#page-header .hamburger .nav-btn.-active span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
 
-#page-header .nav-btn span {
+#page-header .hamburger .nav-btn span {
   position: absolute;
   width: 100%;
   height: 3px;
@@ -348,18 +339,31 @@ h2 span {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
-#page-header .nav-btn span:first-child {
+#page-header .hamburger .nav-btn span:first-child {
   top: 0;
 }
 
-#page-header .nav-btn span:nth-child(2) {
+#page-header .hamburger .nav-btn span:nth-child(2) {
   top: 0;
   bottom: 0;
   margin: auto;
 }
 
-#page-header .nav-btn span:last-child {
+#page-header .hamburger .nav-btn span:last-child {
   bottom: 0;
+}
+
+#page-header .hamburger p {
+  position: absolute;
+  left: 68%;
+  top: -30px;
+  font-weight: bold;
+}
+
+@media print, screen and (min-width: 768px) {
+  #page-header .hamburger p {
+    display: none;
+  }
 }
 
 #page-header .nav {
@@ -414,7 +418,7 @@ h2 span {
 }
 
 #page-header .header-content .header-nav {
-  background: url(../images/kesiki.jpg);
+  background: url(/images/kesiki.jpg);
   background-position: bottom !important;
   background-size: cover !important;
   position: relative;
@@ -475,6 +479,22 @@ h2 span {
   height: 300px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  #page-header .header-content .header-nav .header-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 400px;
+    display: block;
+    letter-spacing: .1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    margin-right: auto;
+  }
+}
+
 @media print, screen and (min-width: 768px) {
   #page-header .header-content .header-nav .header-list {
     display: -webkit-box;
@@ -500,7 +520,7 @@ h2 span {
 @media print, screen and (min-width: 768px) {
   #page-header .header-content .header-nav .header-list li {
     margin: 30px .1rem;
-    width: 110px;
+    width: 120px;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -510,6 +530,12 @@ h2 span {
 
 #page-header .header-content .header-nav .header-list li :hover {
   color: #84c752;
+}
+
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  #page-header .header-content .header-nav .header-list li:nth-child(n+4) {
+    margin-top: -10px;
+  }
 }
 
 #page-header .header-content .header-nav .header-list img {
@@ -522,6 +548,13 @@ h2 span {
   position: relative;
   z-index: 500;
   margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  #page-header .header-content .header-nav .header-list img {
+    height: 50px;
+    width: 100px;
+  }
 }
 
 @media print, screen and (min-width: 768px) {
@@ -548,7 +581,7 @@ h2 span {
 @media print, screen and (min-width: 768px) {
   #page-header .header-content .header-nav .header-list a {
     display: block;
-    width: 110px;
+    width: 120px;
     font-size: 1.5rem;
     color: #000;
   }
@@ -573,6 +606,12 @@ h2 span {
 
 #page-header .header-wrap .wrap-list {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 968px) {
+  #page-header .header-wrap .wrap-list {
+    visibility: hidden;
+  }
 }
 
 @media print, screen and (min-width: 768px) {
@@ -712,10 +751,12 @@ h2 span {
 }
 
 .slide-title {
+  display: none;
 }
 
 @media print, screen and (min-width: 768px) {
   .slide-title {
+    display: block;
     position: absolute;
     height: 450px;
     width: 250px;
@@ -749,19 +790,19 @@ h2 span {
 
 /*　背景画像設定　*/
 .slider-item01 {
-   background: url(../images/kesiki.jpg) !important;
+  background: url(/images/kesiki.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
 
 .slider-item02 {
-  background: url(../images/robie2.jpg) !important;
+  background: url(/images/robie2.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
 
 .slider-item03 {
-  background: url(../images/heya.jpg) !important;
+  background: url(/images/heya.jpg) !important;
   background-position: bottom !important;
   background-size: cover !important;
 }
@@ -1425,7 +1466,7 @@ h1 {
 
 .kv-inner {
   background: url(/images/contact-kv.jpg);
-  width: 100vw !important;
+  max-width: 100% !important;
   height: 700px;
   background-position: center !important;
   background-size: cover !important;
@@ -1433,11 +1474,11 @@ h1 {
 }
 
 .contact-title {
-  color: #000;
   font-size: 3rem;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
   margin-top: 80px;
+  letter-spacing: .2em;
 }
 
 @media print, screen and (min-width: 768px) {
@@ -1628,7 +1669,6 @@ input:not(#agree), button, textarea, select {
   font-size: 1.6rem;
   width: 200px;
   height: 40px;
-  margin-left: 20%;
   border: 1px solid #c2c2c2;
   background: #eee;
   border-radius: 5px;
@@ -1646,18 +1686,12 @@ input:not(#agree), button, textarea, select {
   -moz-appearance: none;
   appearance: none;
   display: block;
-  margin-right: 50%;
-}
-
-#contact .notes {
-  text-align: center;
-  margin-left: 30px;
 }
 
 @media print, screen and (min-width: 768px) {
   #contact .notes {
-    display: initial;
-    margin-left: 40%;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -1745,12 +1779,14 @@ input:not(#agree), button, textarea, select {
   font-size: 3rem;
   text-align: center;
   font-family: 'Noto Serif JP', serif;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 @media print, screen and (min-width: 768px) {
   .contact-title {
     font-size: 4.5rem;
+    margin-top: 60px;
+    width: 100%;
   }
 }
 
@@ -1794,6 +1830,7 @@ input:not(#agree), button, textarea, select {
   padding: 50px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 100% !important;
 }
 
 #contact main header h1 {
